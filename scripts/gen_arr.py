@@ -30,10 +30,7 @@ module game_of_life #(
     // Output interface
     input                           out_load,
     input                           out_shift,
-    output [ARR_X_LEN-1:0]  		out_data,
-
-    inout vccd1,
-    inout vssd1
+    output [ARR_X_LEN-1:0]  		out_data
 ); 
     // Cell connections
     wire[ARR_X_LEN*ARR_Y_LEN:0]   state;
@@ -116,10 +113,7 @@ for y in range(ARR_Y_LEN):
         .prev_out_data  ({out_xy(x, y + 1)}),
         .out_data       ({out_xy(x, y)}),
 
-        .state({state_xy(x, y)}),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state({state_xy(x, y)})
     );
 """)
 
