@@ -34,3 +34,64 @@ Learn about different structures and techniques in game of life here : [convayli
 ---
 
 ## Architecture
+
+#### Cell structure
+
+![](docs/cell_arch.drawio.svg)
+
+### Interconnections
+
+![](docs/network_inp.drawio.svg)
+
+![](docs/network_state.drawio.svg)
+
+![](docs/network_out.drawio.svg)
+
+---
+
+## Cell macro
+
+The cell code is written in verilog in [```macros/life_cell/life_cell.v```](macros/life_cell/life_cell.v)
+
+The IO placement is done manually in [```macros/life_cell/life_cell_io.cfg```](macros/life_cell/life_cell_io.cfg)
+
+The final layout
+![](docs/lifecell_final.png)
+
+With only the Power Delivery Network (PDN) and clock tree. ```VPWR``` net is highlighted. The 
+![](docs/lifecell_pdn_cts.png)
+
+There is a significant amount of overhead for the IOs and the boundary. This makes the macro approach quite inefficient compared to normal flattened RTL design
+
+---
+
+## Toplevel layout
+
+![](docs/toplevel_final.png)
+#### Macro placement
+
+![](docs/toplevel_macros.png)
+
+#### Global Power delivery network (PDN)
+
+![](docs/toplevel_pdn.png)
+
+#### Clock tree
+
+![](docs/toplevel_clocktree.png)
+
+#### Signal routing
+
+![](docs/toplevel_signals.png)
+
+#### Array routing patterns
+
+**Inputs**: Input load signal in glue and red, input data signals in green
+![](docs/routing_inp.png)
+
+**States**: From centre block to neighbours
+![](docs/routing_states.png)
+
+**Outputs**: Output data signals cascaded as a shift register
+![](docs/routing_out.png)
+
