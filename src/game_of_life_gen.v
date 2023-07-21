@@ -19,10 +19,7 @@ module game_of_life #(
     // Output interface
     input                           out_load,
     input                           out_shift,
-    output [ARR_X_LEN-1:0]  		out_data,
-
-    inout vccd1,
-    inout vssd1
+    output [ARR_X_LEN-1:0]  		out_data
 ); 
     // Cell connections
     wire[ARR_X_LEN*ARR_Y_LEN:0]   state;
@@ -63,10 +60,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 0 * ARR_X_LEN]),
 
-        .state(state[0 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 0 * ARR_X_LEN])
     );
 
 
@@ -92,10 +86,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 0 * ARR_X_LEN]),
 
-        .state(state[1 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 0 * ARR_X_LEN])
     );
 
 
@@ -121,10 +112,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 0 * ARR_X_LEN]),
 
-        .state(state[2 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 0 * ARR_X_LEN])
     );
 
 
@@ -150,10 +138,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 0 * ARR_X_LEN]),
 
-        .state(state[3 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 0 * ARR_X_LEN])
     );
 
 
@@ -179,10 +164,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 0 * ARR_X_LEN]),
 
-        .state(state[4 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 0 * ARR_X_LEN])
     );
 
 
@@ -208,10 +190,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 0 * ARR_X_LEN]),
 
-        .state(state[5 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 0 * ARR_X_LEN])
     );
 
 
@@ -237,10 +216,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 0 * ARR_X_LEN]),
 
-        .state(state[6 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 0 * ARR_X_LEN])
     );
 
 
@@ -266,10 +242,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 0 * ARR_X_LEN]),
 
-        .state(state[7 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 0 * ARR_X_LEN])
     );
 
 
@@ -295,10 +268,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 0 * ARR_X_LEN]),
 
-        .state(state[8 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 0 * ARR_X_LEN])
     );
 
 
@@ -324,10 +294,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 0 * ARR_X_LEN]),
 
-        .state(state[9 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 0 * ARR_X_LEN])
     );
 
 
@@ -353,10 +320,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 0 * ARR_X_LEN]),
 
-        .state(state[10 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 0 * ARR_X_LEN])
     );
 
 
@@ -382,10 +346,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 0 * ARR_X_LEN]),
 
-        .state(state[11 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 0 * ARR_X_LEN])
     );
 
 
@@ -411,10 +372,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 0 * ARR_X_LEN]),
 
-        .state(state[12 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 0 * ARR_X_LEN])
     );
 
 
@@ -440,10 +398,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 0 * ARR_X_LEN]),
 
-        .state(state[13 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 0 * ARR_X_LEN])
     );
 
 
@@ -469,10 +424,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 0 * ARR_X_LEN]),
 
-        .state(state[14 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 0 * ARR_X_LEN])
     );
 
 
@@ -498,10 +450,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 1 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 0 * ARR_X_LEN]),
 
-        .state(state[15 + 0 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 0 * ARR_X_LEN])
     );
 
 
@@ -527,10 +476,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 1 * ARR_X_LEN]),
 
-        .state(state[0 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 1 * ARR_X_LEN])
     );
 
 
@@ -556,10 +502,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 1 * ARR_X_LEN]),
 
-        .state(state[1 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 1 * ARR_X_LEN])
     );
 
 
@@ -585,10 +528,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 1 * ARR_X_LEN]),
 
-        .state(state[2 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 1 * ARR_X_LEN])
     );
 
 
@@ -614,10 +554,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 1 * ARR_X_LEN]),
 
-        .state(state[3 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 1 * ARR_X_LEN])
     );
 
 
@@ -643,10 +580,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 1 * ARR_X_LEN]),
 
-        .state(state[4 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 1 * ARR_X_LEN])
     );
 
 
@@ -672,10 +606,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 1 * ARR_X_LEN]),
 
-        .state(state[5 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 1 * ARR_X_LEN])
     );
 
 
@@ -701,10 +632,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 1 * ARR_X_LEN]),
 
-        .state(state[6 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 1 * ARR_X_LEN])
     );
 
 
@@ -730,10 +658,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 1 * ARR_X_LEN]),
 
-        .state(state[7 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 1 * ARR_X_LEN])
     );
 
 
@@ -759,10 +684,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 1 * ARR_X_LEN]),
 
-        .state(state[8 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 1 * ARR_X_LEN])
     );
 
 
@@ -788,10 +710,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 1 * ARR_X_LEN]),
 
-        .state(state[9 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 1 * ARR_X_LEN])
     );
 
 
@@ -817,10 +736,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 1 * ARR_X_LEN]),
 
-        .state(state[10 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 1 * ARR_X_LEN])
     );
 
 
@@ -846,10 +762,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 1 * ARR_X_LEN]),
 
-        .state(state[11 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 1 * ARR_X_LEN])
     );
 
 
@@ -875,10 +788,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 1 * ARR_X_LEN]),
 
-        .state(state[12 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 1 * ARR_X_LEN])
     );
 
 
@@ -904,10 +814,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 1 * ARR_X_LEN]),
 
-        .state(state[13 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 1 * ARR_X_LEN])
     );
 
 
@@ -933,10 +840,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 1 * ARR_X_LEN]),
 
-        .state(state[14 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 1 * ARR_X_LEN])
     );
 
 
@@ -962,10 +866,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 2 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 1 * ARR_X_LEN]),
 
-        .state(state[15 + 1 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 1 * ARR_X_LEN])
     );
 
 
@@ -991,10 +892,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 2 * ARR_X_LEN]),
 
-        .state(state[0 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 2 * ARR_X_LEN])
     );
 
 
@@ -1020,10 +918,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 2 * ARR_X_LEN]),
 
-        .state(state[1 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 2 * ARR_X_LEN])
     );
 
 
@@ -1049,10 +944,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 2 * ARR_X_LEN]),
 
-        .state(state[2 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 2 * ARR_X_LEN])
     );
 
 
@@ -1078,10 +970,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 2 * ARR_X_LEN]),
 
-        .state(state[3 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 2 * ARR_X_LEN])
     );
 
 
@@ -1107,10 +996,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 2 * ARR_X_LEN]),
 
-        .state(state[4 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 2 * ARR_X_LEN])
     );
 
 
@@ -1136,10 +1022,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 2 * ARR_X_LEN]),
 
-        .state(state[5 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 2 * ARR_X_LEN])
     );
 
 
@@ -1165,10 +1048,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 2 * ARR_X_LEN]),
 
-        .state(state[6 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 2 * ARR_X_LEN])
     );
 
 
@@ -1194,10 +1074,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 2 * ARR_X_LEN]),
 
-        .state(state[7 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 2 * ARR_X_LEN])
     );
 
 
@@ -1223,10 +1100,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 2 * ARR_X_LEN]),
 
-        .state(state[8 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 2 * ARR_X_LEN])
     );
 
 
@@ -1252,10 +1126,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 2 * ARR_X_LEN]),
 
-        .state(state[9 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 2 * ARR_X_LEN])
     );
 
 
@@ -1281,10 +1152,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 2 * ARR_X_LEN]),
 
-        .state(state[10 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 2 * ARR_X_LEN])
     );
 
 
@@ -1310,10 +1178,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 2 * ARR_X_LEN]),
 
-        .state(state[11 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 2 * ARR_X_LEN])
     );
 
 
@@ -1339,10 +1204,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 2 * ARR_X_LEN]),
 
-        .state(state[12 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 2 * ARR_X_LEN])
     );
 
 
@@ -1368,10 +1230,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 2 * ARR_X_LEN]),
 
-        .state(state[13 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 2 * ARR_X_LEN])
     );
 
 
@@ -1397,10 +1256,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 2 * ARR_X_LEN]),
 
-        .state(state[14 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 2 * ARR_X_LEN])
     );
 
 
@@ -1426,10 +1282,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 3 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 2 * ARR_X_LEN]),
 
-        .state(state[15 + 2 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 2 * ARR_X_LEN])
     );
 
 
@@ -1455,10 +1308,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 3 * ARR_X_LEN]),
 
-        .state(state[0 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 3 * ARR_X_LEN])
     );
 
 
@@ -1484,10 +1334,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 3 * ARR_X_LEN]),
 
-        .state(state[1 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 3 * ARR_X_LEN])
     );
 
 
@@ -1513,10 +1360,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 3 * ARR_X_LEN]),
 
-        .state(state[2 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 3 * ARR_X_LEN])
     );
 
 
@@ -1542,10 +1386,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 3 * ARR_X_LEN]),
 
-        .state(state[3 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 3 * ARR_X_LEN])
     );
 
 
@@ -1571,10 +1412,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 3 * ARR_X_LEN]),
 
-        .state(state[4 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 3 * ARR_X_LEN])
     );
 
 
@@ -1600,10 +1438,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 3 * ARR_X_LEN]),
 
-        .state(state[5 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 3 * ARR_X_LEN])
     );
 
 
@@ -1629,10 +1464,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 3 * ARR_X_LEN]),
 
-        .state(state[6 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 3 * ARR_X_LEN])
     );
 
 
@@ -1658,10 +1490,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 3 * ARR_X_LEN]),
 
-        .state(state[7 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 3 * ARR_X_LEN])
     );
 
 
@@ -1687,10 +1516,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 3 * ARR_X_LEN]),
 
-        .state(state[8 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 3 * ARR_X_LEN])
     );
 
 
@@ -1716,10 +1542,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 3 * ARR_X_LEN]),
 
-        .state(state[9 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 3 * ARR_X_LEN])
     );
 
 
@@ -1745,10 +1568,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 3 * ARR_X_LEN]),
 
-        .state(state[10 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 3 * ARR_X_LEN])
     );
 
 
@@ -1774,10 +1594,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 3 * ARR_X_LEN]),
 
-        .state(state[11 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 3 * ARR_X_LEN])
     );
 
 
@@ -1803,10 +1620,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 3 * ARR_X_LEN]),
 
-        .state(state[12 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 3 * ARR_X_LEN])
     );
 
 
@@ -1832,10 +1646,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 3 * ARR_X_LEN]),
 
-        .state(state[13 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 3 * ARR_X_LEN])
     );
 
 
@@ -1861,10 +1672,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 3 * ARR_X_LEN]),
 
-        .state(state[14 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 3 * ARR_X_LEN])
     );
 
 
@@ -1890,10 +1698,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 4 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 3 * ARR_X_LEN]),
 
-        .state(state[15 + 3 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 3 * ARR_X_LEN])
     );
 
 
@@ -1919,10 +1724,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 4 * ARR_X_LEN]),
 
-        .state(state[0 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 4 * ARR_X_LEN])
     );
 
 
@@ -1948,10 +1750,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 4 * ARR_X_LEN]),
 
-        .state(state[1 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 4 * ARR_X_LEN])
     );
 
 
@@ -1977,10 +1776,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 4 * ARR_X_LEN]),
 
-        .state(state[2 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 4 * ARR_X_LEN])
     );
 
 
@@ -2006,10 +1802,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 4 * ARR_X_LEN]),
 
-        .state(state[3 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 4 * ARR_X_LEN])
     );
 
 
@@ -2035,10 +1828,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 4 * ARR_X_LEN]),
 
-        .state(state[4 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 4 * ARR_X_LEN])
     );
 
 
@@ -2064,10 +1854,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 4 * ARR_X_LEN]),
 
-        .state(state[5 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 4 * ARR_X_LEN])
     );
 
 
@@ -2093,10 +1880,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 4 * ARR_X_LEN]),
 
-        .state(state[6 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 4 * ARR_X_LEN])
     );
 
 
@@ -2122,10 +1906,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 4 * ARR_X_LEN]),
 
-        .state(state[7 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 4 * ARR_X_LEN])
     );
 
 
@@ -2151,10 +1932,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 4 * ARR_X_LEN]),
 
-        .state(state[8 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 4 * ARR_X_LEN])
     );
 
 
@@ -2180,10 +1958,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 4 * ARR_X_LEN]),
 
-        .state(state[9 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 4 * ARR_X_LEN])
     );
 
 
@@ -2209,10 +1984,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 4 * ARR_X_LEN]),
 
-        .state(state[10 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 4 * ARR_X_LEN])
     );
 
 
@@ -2238,10 +2010,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 4 * ARR_X_LEN]),
 
-        .state(state[11 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 4 * ARR_X_LEN])
     );
 
 
@@ -2267,10 +2036,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 4 * ARR_X_LEN]),
 
-        .state(state[12 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 4 * ARR_X_LEN])
     );
 
 
@@ -2296,10 +2062,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 4 * ARR_X_LEN]),
 
-        .state(state[13 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 4 * ARR_X_LEN])
     );
 
 
@@ -2325,10 +2088,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 4 * ARR_X_LEN]),
 
-        .state(state[14 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 4 * ARR_X_LEN])
     );
 
 
@@ -2354,10 +2114,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 5 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 4 * ARR_X_LEN]),
 
-        .state(state[15 + 4 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 4 * ARR_X_LEN])
     );
 
 
@@ -2383,10 +2140,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 5 * ARR_X_LEN]),
 
-        .state(state[0 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 5 * ARR_X_LEN])
     );
 
 
@@ -2412,10 +2166,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 5 * ARR_X_LEN]),
 
-        .state(state[1 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 5 * ARR_X_LEN])
     );
 
 
@@ -2441,10 +2192,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 5 * ARR_X_LEN]),
 
-        .state(state[2 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 5 * ARR_X_LEN])
     );
 
 
@@ -2470,10 +2218,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 5 * ARR_X_LEN]),
 
-        .state(state[3 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 5 * ARR_X_LEN])
     );
 
 
@@ -2499,10 +2244,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 5 * ARR_X_LEN]),
 
-        .state(state[4 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 5 * ARR_X_LEN])
     );
 
 
@@ -2528,10 +2270,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 5 * ARR_X_LEN]),
 
-        .state(state[5 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 5 * ARR_X_LEN])
     );
 
 
@@ -2557,10 +2296,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 5 * ARR_X_LEN]),
 
-        .state(state[6 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 5 * ARR_X_LEN])
     );
 
 
@@ -2586,10 +2322,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 5 * ARR_X_LEN]),
 
-        .state(state[7 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 5 * ARR_X_LEN])
     );
 
 
@@ -2615,10 +2348,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 5 * ARR_X_LEN]),
 
-        .state(state[8 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 5 * ARR_X_LEN])
     );
 
 
@@ -2644,10 +2374,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 5 * ARR_X_LEN]),
 
-        .state(state[9 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 5 * ARR_X_LEN])
     );
 
 
@@ -2673,10 +2400,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 5 * ARR_X_LEN]),
 
-        .state(state[10 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 5 * ARR_X_LEN])
     );
 
 
@@ -2702,10 +2426,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 5 * ARR_X_LEN]),
 
-        .state(state[11 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 5 * ARR_X_LEN])
     );
 
 
@@ -2731,10 +2452,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 5 * ARR_X_LEN]),
 
-        .state(state[12 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 5 * ARR_X_LEN])
     );
 
 
@@ -2760,10 +2478,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 5 * ARR_X_LEN]),
 
-        .state(state[13 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 5 * ARR_X_LEN])
     );
 
 
@@ -2789,10 +2504,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 5 * ARR_X_LEN]),
 
-        .state(state[14 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 5 * ARR_X_LEN])
     );
 
 
@@ -2818,10 +2530,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 6 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 5 * ARR_X_LEN]),
 
-        .state(state[15 + 5 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 5 * ARR_X_LEN])
     );
 
 
@@ -2847,10 +2556,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 6 * ARR_X_LEN]),
 
-        .state(state[0 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 6 * ARR_X_LEN])
     );
 
 
@@ -2876,10 +2582,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 6 * ARR_X_LEN]),
 
-        .state(state[1 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 6 * ARR_X_LEN])
     );
 
 
@@ -2905,10 +2608,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 6 * ARR_X_LEN]),
 
-        .state(state[2 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 6 * ARR_X_LEN])
     );
 
 
@@ -2934,10 +2634,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 6 * ARR_X_LEN]),
 
-        .state(state[3 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 6 * ARR_X_LEN])
     );
 
 
@@ -2963,10 +2660,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 6 * ARR_X_LEN]),
 
-        .state(state[4 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 6 * ARR_X_LEN])
     );
 
 
@@ -2992,10 +2686,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 6 * ARR_X_LEN]),
 
-        .state(state[5 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 6 * ARR_X_LEN])
     );
 
 
@@ -3021,10 +2712,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 6 * ARR_X_LEN]),
 
-        .state(state[6 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 6 * ARR_X_LEN])
     );
 
 
@@ -3050,10 +2738,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 6 * ARR_X_LEN]),
 
-        .state(state[7 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 6 * ARR_X_LEN])
     );
 
 
@@ -3079,10 +2764,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 6 * ARR_X_LEN]),
 
-        .state(state[8 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 6 * ARR_X_LEN])
     );
 
 
@@ -3108,10 +2790,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 6 * ARR_X_LEN]),
 
-        .state(state[9 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 6 * ARR_X_LEN])
     );
 
 
@@ -3137,10 +2816,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 6 * ARR_X_LEN]),
 
-        .state(state[10 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 6 * ARR_X_LEN])
     );
 
 
@@ -3166,10 +2842,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 6 * ARR_X_LEN]),
 
-        .state(state[11 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 6 * ARR_X_LEN])
     );
 
 
@@ -3195,10 +2868,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 6 * ARR_X_LEN]),
 
-        .state(state[12 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 6 * ARR_X_LEN])
     );
 
 
@@ -3224,10 +2894,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 6 * ARR_X_LEN]),
 
-        .state(state[13 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 6 * ARR_X_LEN])
     );
 
 
@@ -3253,10 +2920,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 6 * ARR_X_LEN]),
 
-        .state(state[14 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 6 * ARR_X_LEN])
     );
 
 
@@ -3282,10 +2946,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 7 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 6 * ARR_X_LEN]),
 
-        .state(state[15 + 6 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 6 * ARR_X_LEN])
     );
 
 
@@ -3311,10 +2972,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 7 * ARR_X_LEN]),
 
-        .state(state[0 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 7 * ARR_X_LEN])
     );
 
 
@@ -3340,10 +2998,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 7 * ARR_X_LEN]),
 
-        .state(state[1 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 7 * ARR_X_LEN])
     );
 
 
@@ -3369,10 +3024,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 7 * ARR_X_LEN]),
 
-        .state(state[2 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 7 * ARR_X_LEN])
     );
 
 
@@ -3398,10 +3050,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 7 * ARR_X_LEN]),
 
-        .state(state[3 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 7 * ARR_X_LEN])
     );
 
 
@@ -3427,10 +3076,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 7 * ARR_X_LEN]),
 
-        .state(state[4 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 7 * ARR_X_LEN])
     );
 
 
@@ -3456,10 +3102,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 7 * ARR_X_LEN]),
 
-        .state(state[5 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 7 * ARR_X_LEN])
     );
 
 
@@ -3485,10 +3128,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 7 * ARR_X_LEN]),
 
-        .state(state[6 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 7 * ARR_X_LEN])
     );
 
 
@@ -3514,10 +3154,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 7 * ARR_X_LEN]),
 
-        .state(state[7 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 7 * ARR_X_LEN])
     );
 
 
@@ -3543,10 +3180,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 7 * ARR_X_LEN]),
 
-        .state(state[8 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 7 * ARR_X_LEN])
     );
 
 
@@ -3572,10 +3206,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 7 * ARR_X_LEN]),
 
-        .state(state[9 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 7 * ARR_X_LEN])
     );
 
 
@@ -3601,10 +3232,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 7 * ARR_X_LEN]),
 
-        .state(state[10 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 7 * ARR_X_LEN])
     );
 
 
@@ -3630,10 +3258,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 7 * ARR_X_LEN]),
 
-        .state(state[11 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 7 * ARR_X_LEN])
     );
 
 
@@ -3659,10 +3284,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 7 * ARR_X_LEN]),
 
-        .state(state[12 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 7 * ARR_X_LEN])
     );
 
 
@@ -3688,10 +3310,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 7 * ARR_X_LEN]),
 
-        .state(state[13 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 7 * ARR_X_LEN])
     );
 
 
@@ -3717,10 +3336,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 7 * ARR_X_LEN]),
 
-        .state(state[14 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 7 * ARR_X_LEN])
     );
 
 
@@ -3746,10 +3362,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 8 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 7 * ARR_X_LEN]),
 
-        .state(state[15 + 7 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 7 * ARR_X_LEN])
     );
 
 
@@ -3775,10 +3388,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 8 * ARR_X_LEN]),
 
-        .state(state[0 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 8 * ARR_X_LEN])
     );
 
 
@@ -3804,10 +3414,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 8 * ARR_X_LEN]),
 
-        .state(state[1 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 8 * ARR_X_LEN])
     );
 
 
@@ -3833,10 +3440,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 8 * ARR_X_LEN]),
 
-        .state(state[2 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 8 * ARR_X_LEN])
     );
 
 
@@ -3862,10 +3466,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 8 * ARR_X_LEN]),
 
-        .state(state[3 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 8 * ARR_X_LEN])
     );
 
 
@@ -3891,10 +3492,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 8 * ARR_X_LEN]),
 
-        .state(state[4 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 8 * ARR_X_LEN])
     );
 
 
@@ -3920,10 +3518,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 8 * ARR_X_LEN]),
 
-        .state(state[5 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 8 * ARR_X_LEN])
     );
 
 
@@ -3949,10 +3544,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 8 * ARR_X_LEN]),
 
-        .state(state[6 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 8 * ARR_X_LEN])
     );
 
 
@@ -3978,10 +3570,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 8 * ARR_X_LEN]),
 
-        .state(state[7 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 8 * ARR_X_LEN])
     );
 
 
@@ -4007,10 +3596,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 8 * ARR_X_LEN]),
 
-        .state(state[8 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 8 * ARR_X_LEN])
     );
 
 
@@ -4036,10 +3622,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 8 * ARR_X_LEN]),
 
-        .state(state[9 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 8 * ARR_X_LEN])
     );
 
 
@@ -4065,10 +3648,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 8 * ARR_X_LEN]),
 
-        .state(state[10 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 8 * ARR_X_LEN])
     );
 
 
@@ -4094,10 +3674,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 8 * ARR_X_LEN]),
 
-        .state(state[11 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 8 * ARR_X_LEN])
     );
 
 
@@ -4123,10 +3700,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 8 * ARR_X_LEN]),
 
-        .state(state[12 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 8 * ARR_X_LEN])
     );
 
 
@@ -4152,10 +3726,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 8 * ARR_X_LEN]),
 
-        .state(state[13 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 8 * ARR_X_LEN])
     );
 
 
@@ -4181,10 +3752,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 8 * ARR_X_LEN]),
 
-        .state(state[14 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 8 * ARR_X_LEN])
     );
 
 
@@ -4210,10 +3778,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 9 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 8 * ARR_X_LEN]),
 
-        .state(state[15 + 8 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 8 * ARR_X_LEN])
     );
 
 
@@ -4239,10 +3804,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 9 * ARR_X_LEN]),
 
-        .state(state[0 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 9 * ARR_X_LEN])
     );
 
 
@@ -4268,10 +3830,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 9 * ARR_X_LEN]),
 
-        .state(state[1 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 9 * ARR_X_LEN])
     );
 
 
@@ -4297,10 +3856,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 9 * ARR_X_LEN]),
 
-        .state(state[2 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 9 * ARR_X_LEN])
     );
 
 
@@ -4326,10 +3882,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 9 * ARR_X_LEN]),
 
-        .state(state[3 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 9 * ARR_X_LEN])
     );
 
 
@@ -4355,10 +3908,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 9 * ARR_X_LEN]),
 
-        .state(state[4 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 9 * ARR_X_LEN])
     );
 
 
@@ -4384,10 +3934,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 9 * ARR_X_LEN]),
 
-        .state(state[5 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 9 * ARR_X_LEN])
     );
 
 
@@ -4413,10 +3960,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 9 * ARR_X_LEN]),
 
-        .state(state[6 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 9 * ARR_X_LEN])
     );
 
 
@@ -4442,10 +3986,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 9 * ARR_X_LEN]),
 
-        .state(state[7 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 9 * ARR_X_LEN])
     );
 
 
@@ -4471,10 +4012,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 9 * ARR_X_LEN]),
 
-        .state(state[8 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 9 * ARR_X_LEN])
     );
 
 
@@ -4500,10 +4038,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 9 * ARR_X_LEN]),
 
-        .state(state[9 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 9 * ARR_X_LEN])
     );
 
 
@@ -4529,10 +4064,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 9 * ARR_X_LEN]),
 
-        .state(state[10 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 9 * ARR_X_LEN])
     );
 
 
@@ -4558,10 +4090,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 9 * ARR_X_LEN]),
 
-        .state(state[11 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 9 * ARR_X_LEN])
     );
 
 
@@ -4587,10 +4116,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 9 * ARR_X_LEN]),
 
-        .state(state[12 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 9 * ARR_X_LEN])
     );
 
 
@@ -4616,10 +4142,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 9 * ARR_X_LEN]),
 
-        .state(state[13 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 9 * ARR_X_LEN])
     );
 
 
@@ -4645,10 +4168,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 9 * ARR_X_LEN]),
 
-        .state(state[14 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 9 * ARR_X_LEN])
     );
 
 
@@ -4674,10 +4194,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 10 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 9 * ARR_X_LEN]),
 
-        .state(state[15 + 9 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 9 * ARR_X_LEN])
     );
 
 
@@ -4703,10 +4220,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 10 * ARR_X_LEN]),
 
-        .state(state[0 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 10 * ARR_X_LEN])
     );
 
 
@@ -4732,10 +4246,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 10 * ARR_X_LEN]),
 
-        .state(state[1 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 10 * ARR_X_LEN])
     );
 
 
@@ -4761,10 +4272,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 10 * ARR_X_LEN]),
 
-        .state(state[2 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 10 * ARR_X_LEN])
     );
 
 
@@ -4790,10 +4298,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 10 * ARR_X_LEN]),
 
-        .state(state[3 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 10 * ARR_X_LEN])
     );
 
 
@@ -4819,10 +4324,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 10 * ARR_X_LEN]),
 
-        .state(state[4 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 10 * ARR_X_LEN])
     );
 
 
@@ -4848,10 +4350,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 10 * ARR_X_LEN]),
 
-        .state(state[5 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 10 * ARR_X_LEN])
     );
 
 
@@ -4877,10 +4376,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 10 * ARR_X_LEN]),
 
-        .state(state[6 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 10 * ARR_X_LEN])
     );
 
 
@@ -4906,10 +4402,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 10 * ARR_X_LEN]),
 
-        .state(state[7 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 10 * ARR_X_LEN])
     );
 
 
@@ -4935,10 +4428,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 10 * ARR_X_LEN]),
 
-        .state(state[8 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 10 * ARR_X_LEN])
     );
 
 
@@ -4964,10 +4454,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 10 * ARR_X_LEN]),
 
-        .state(state[9 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 10 * ARR_X_LEN])
     );
 
 
@@ -4993,10 +4480,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 10 * ARR_X_LEN]),
 
-        .state(state[10 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 10 * ARR_X_LEN])
     );
 
 
@@ -5022,10 +4506,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 10 * ARR_X_LEN]),
 
-        .state(state[11 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 10 * ARR_X_LEN])
     );
 
 
@@ -5051,10 +4532,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 10 * ARR_X_LEN]),
 
-        .state(state[12 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 10 * ARR_X_LEN])
     );
 
 
@@ -5080,10 +4558,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 10 * ARR_X_LEN]),
 
-        .state(state[13 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 10 * ARR_X_LEN])
     );
 
 
@@ -5109,10 +4584,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 10 * ARR_X_LEN]),
 
-        .state(state[14 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 10 * ARR_X_LEN])
     );
 
 
@@ -5138,10 +4610,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 11 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 10 * ARR_X_LEN]),
 
-        .state(state[15 + 10 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 10 * ARR_X_LEN])
     );
 
 
@@ -5167,10 +4636,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 11 * ARR_X_LEN]),
 
-        .state(state[0 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 11 * ARR_X_LEN])
     );
 
 
@@ -5196,10 +4662,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 11 * ARR_X_LEN]),
 
-        .state(state[1 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 11 * ARR_X_LEN])
     );
 
 
@@ -5225,10 +4688,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 11 * ARR_X_LEN]),
 
-        .state(state[2 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 11 * ARR_X_LEN])
     );
 
 
@@ -5254,10 +4714,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 11 * ARR_X_LEN]),
 
-        .state(state[3 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 11 * ARR_X_LEN])
     );
 
 
@@ -5283,10 +4740,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 11 * ARR_X_LEN]),
 
-        .state(state[4 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 11 * ARR_X_LEN])
     );
 
 
@@ -5312,10 +4766,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 11 * ARR_X_LEN]),
 
-        .state(state[5 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 11 * ARR_X_LEN])
     );
 
 
@@ -5341,10 +4792,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 11 * ARR_X_LEN]),
 
-        .state(state[6 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 11 * ARR_X_LEN])
     );
 
 
@@ -5370,10 +4818,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 11 * ARR_X_LEN]),
 
-        .state(state[7 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 11 * ARR_X_LEN])
     );
 
 
@@ -5399,10 +4844,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 11 * ARR_X_LEN]),
 
-        .state(state[8 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 11 * ARR_X_LEN])
     );
 
 
@@ -5428,10 +4870,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 11 * ARR_X_LEN]),
 
-        .state(state[9 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 11 * ARR_X_LEN])
     );
 
 
@@ -5457,10 +4896,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 11 * ARR_X_LEN]),
 
-        .state(state[10 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 11 * ARR_X_LEN])
     );
 
 
@@ -5486,10 +4922,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 11 * ARR_X_LEN]),
 
-        .state(state[11 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 11 * ARR_X_LEN])
     );
 
 
@@ -5515,10 +4948,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 11 * ARR_X_LEN]),
 
-        .state(state[12 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 11 * ARR_X_LEN])
     );
 
 
@@ -5544,10 +4974,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 11 * ARR_X_LEN]),
 
-        .state(state[13 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 11 * ARR_X_LEN])
     );
 
 
@@ -5573,10 +5000,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 11 * ARR_X_LEN]),
 
-        .state(state[14 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 11 * ARR_X_LEN])
     );
 
 
@@ -5602,10 +5026,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 12 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 11 * ARR_X_LEN]),
 
-        .state(state[15 + 11 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 11 * ARR_X_LEN])
     );
 
 
@@ -5631,10 +5052,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 12 * ARR_X_LEN]),
 
-        .state(state[0 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 12 * ARR_X_LEN])
     );
 
 
@@ -5660,10 +5078,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 12 * ARR_X_LEN]),
 
-        .state(state[1 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 12 * ARR_X_LEN])
     );
 
 
@@ -5689,10 +5104,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 12 * ARR_X_LEN]),
 
-        .state(state[2 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 12 * ARR_X_LEN])
     );
 
 
@@ -5718,10 +5130,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 12 * ARR_X_LEN]),
 
-        .state(state[3 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 12 * ARR_X_LEN])
     );
 
 
@@ -5747,10 +5156,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 12 * ARR_X_LEN]),
 
-        .state(state[4 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 12 * ARR_X_LEN])
     );
 
 
@@ -5776,10 +5182,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 12 * ARR_X_LEN]),
 
-        .state(state[5 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 12 * ARR_X_LEN])
     );
 
 
@@ -5805,10 +5208,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 12 * ARR_X_LEN]),
 
-        .state(state[6 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 12 * ARR_X_LEN])
     );
 
 
@@ -5834,10 +5234,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 12 * ARR_X_LEN]),
 
-        .state(state[7 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 12 * ARR_X_LEN])
     );
 
 
@@ -5863,10 +5260,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 12 * ARR_X_LEN]),
 
-        .state(state[8 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 12 * ARR_X_LEN])
     );
 
 
@@ -5892,10 +5286,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 12 * ARR_X_LEN]),
 
-        .state(state[9 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 12 * ARR_X_LEN])
     );
 
 
@@ -5921,10 +5312,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 12 * ARR_X_LEN]),
 
-        .state(state[10 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 12 * ARR_X_LEN])
     );
 
 
@@ -5950,10 +5338,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 12 * ARR_X_LEN]),
 
-        .state(state[11 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 12 * ARR_X_LEN])
     );
 
 
@@ -5979,10 +5364,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 12 * ARR_X_LEN]),
 
-        .state(state[12 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 12 * ARR_X_LEN])
     );
 
 
@@ -6008,10 +5390,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 12 * ARR_X_LEN]),
 
-        .state(state[13 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 12 * ARR_X_LEN])
     );
 
 
@@ -6037,10 +5416,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 12 * ARR_X_LEN]),
 
-        .state(state[14 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 12 * ARR_X_LEN])
     );
 
 
@@ -6066,10 +5442,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 13 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 12 * ARR_X_LEN]),
 
-        .state(state[15 + 12 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 12 * ARR_X_LEN])
     );
 
 
@@ -6095,10 +5468,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 13 * ARR_X_LEN]),
 
-        .state(state[0 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 13 * ARR_X_LEN])
     );
 
 
@@ -6124,10 +5494,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 13 * ARR_X_LEN]),
 
-        .state(state[1 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 13 * ARR_X_LEN])
     );
 
 
@@ -6153,10 +5520,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 13 * ARR_X_LEN]),
 
-        .state(state[2 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 13 * ARR_X_LEN])
     );
 
 
@@ -6182,10 +5546,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 13 * ARR_X_LEN]),
 
-        .state(state[3 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 13 * ARR_X_LEN])
     );
 
 
@@ -6211,10 +5572,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 13 * ARR_X_LEN]),
 
-        .state(state[4 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 13 * ARR_X_LEN])
     );
 
 
@@ -6240,10 +5598,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 13 * ARR_X_LEN]),
 
-        .state(state[5 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 13 * ARR_X_LEN])
     );
 
 
@@ -6269,10 +5624,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 13 * ARR_X_LEN]),
 
-        .state(state[6 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 13 * ARR_X_LEN])
     );
 
 
@@ -6298,10 +5650,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 13 * ARR_X_LEN]),
 
-        .state(state[7 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 13 * ARR_X_LEN])
     );
 
 
@@ -6327,10 +5676,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 13 * ARR_X_LEN]),
 
-        .state(state[8 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 13 * ARR_X_LEN])
     );
 
 
@@ -6356,10 +5702,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 13 * ARR_X_LEN]),
 
-        .state(state[9 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 13 * ARR_X_LEN])
     );
 
 
@@ -6385,10 +5728,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 13 * ARR_X_LEN]),
 
-        .state(state[10 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 13 * ARR_X_LEN])
     );
 
 
@@ -6414,10 +5754,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 13 * ARR_X_LEN]),
 
-        .state(state[11 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 13 * ARR_X_LEN])
     );
 
 
@@ -6443,10 +5780,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 13 * ARR_X_LEN]),
 
-        .state(state[12 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 13 * ARR_X_LEN])
     );
 
 
@@ -6472,10 +5806,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 13 * ARR_X_LEN]),
 
-        .state(state[13 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 13 * ARR_X_LEN])
     );
 
 
@@ -6501,10 +5832,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 13 * ARR_X_LEN]),
 
-        .state(state[14 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 13 * ARR_X_LEN])
     );
 
 
@@ -6530,10 +5858,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 14 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 13 * ARR_X_LEN]),
 
-        .state(state[15 + 13 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 13 * ARR_X_LEN])
     );
 
 
@@ -6559,10 +5884,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[0 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[0 + 14 * ARR_X_LEN]),
 
-        .state(state[0 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 14 * ARR_X_LEN])
     );
 
 
@@ -6588,10 +5910,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[1 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[1 + 14 * ARR_X_LEN]),
 
-        .state(state[1 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 14 * ARR_X_LEN])
     );
 
 
@@ -6617,10 +5936,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[2 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[2 + 14 * ARR_X_LEN]),
 
-        .state(state[2 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 14 * ARR_X_LEN])
     );
 
 
@@ -6646,10 +5962,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[3 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[3 + 14 * ARR_X_LEN]),
 
-        .state(state[3 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 14 * ARR_X_LEN])
     );
 
 
@@ -6675,10 +5988,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[4 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[4 + 14 * ARR_X_LEN]),
 
-        .state(state[4 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 14 * ARR_X_LEN])
     );
 
 
@@ -6704,10 +6014,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[5 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[5 + 14 * ARR_X_LEN]),
 
-        .state(state[5 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 14 * ARR_X_LEN])
     );
 
 
@@ -6733,10 +6040,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[6 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[6 + 14 * ARR_X_LEN]),
 
-        .state(state[6 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 14 * ARR_X_LEN])
     );
 
 
@@ -6762,10 +6066,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[7 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[7 + 14 * ARR_X_LEN]),
 
-        .state(state[7 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 14 * ARR_X_LEN])
     );
 
 
@@ -6791,10 +6092,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[8 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[8 + 14 * ARR_X_LEN]),
 
-        .state(state[8 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 14 * ARR_X_LEN])
     );
 
 
@@ -6820,10 +6118,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[9 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[9 + 14 * ARR_X_LEN]),
 
-        .state(state[9 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 14 * ARR_X_LEN])
     );
 
 
@@ -6849,10 +6144,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[10 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[10 + 14 * ARR_X_LEN]),
 
-        .state(state[10 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 14 * ARR_X_LEN])
     );
 
 
@@ -6878,10 +6170,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[11 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[11 + 14 * ARR_X_LEN]),
 
-        .state(state[11 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 14 * ARR_X_LEN])
     );
 
 
@@ -6907,10 +6196,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[12 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[12 + 14 * ARR_X_LEN]),
 
-        .state(state[12 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 14 * ARR_X_LEN])
     );
 
 
@@ -6936,10 +6222,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[13 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[13 + 14 * ARR_X_LEN]),
 
-        .state(state[13 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 14 * ARR_X_LEN])
     );
 
 
@@ -6965,10 +6248,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[14 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[14 + 14 * ARR_X_LEN]),
 
-        .state(state[14 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 14 * ARR_X_LEN])
     );
 
 
@@ -6994,10 +6274,7 @@ module game_of_life #(
         .prev_out_data  (cell_outs[15 + 15 * ARR_X_LEN]),
         .out_data       (cell_outs[15 + 14 * ARR_X_LEN]),
 
-        .state(state[15 + 14 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 14 * ARR_X_LEN])
     );
 
 
@@ -7023,10 +6300,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[0 + 15 * ARR_X_LEN]),
 
-        .state(state[0 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[0 + 15 * ARR_X_LEN])
     );
 
 
@@ -7052,10 +6326,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[1 + 15 * ARR_X_LEN]),
 
-        .state(state[1 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[1 + 15 * ARR_X_LEN])
     );
 
 
@@ -7081,10 +6352,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[2 + 15 * ARR_X_LEN]),
 
-        .state(state[2 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[2 + 15 * ARR_X_LEN])
     );
 
 
@@ -7110,10 +6378,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[3 + 15 * ARR_X_LEN]),
 
-        .state(state[3 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[3 + 15 * ARR_X_LEN])
     );
 
 
@@ -7139,10 +6404,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[4 + 15 * ARR_X_LEN]),
 
-        .state(state[4 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[4 + 15 * ARR_X_LEN])
     );
 
 
@@ -7168,10 +6430,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[5 + 15 * ARR_X_LEN]),
 
-        .state(state[5 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[5 + 15 * ARR_X_LEN])
     );
 
 
@@ -7197,10 +6456,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[6 + 15 * ARR_X_LEN]),
 
-        .state(state[6 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[6 + 15 * ARR_X_LEN])
     );
 
 
@@ -7226,10 +6482,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[7 + 15 * ARR_X_LEN]),
 
-        .state(state[7 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[7 + 15 * ARR_X_LEN])
     );
 
 
@@ -7255,10 +6508,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[8 + 15 * ARR_X_LEN]),
 
-        .state(state[8 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[8 + 15 * ARR_X_LEN])
     );
 
 
@@ -7284,10 +6534,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[9 + 15 * ARR_X_LEN]),
 
-        .state(state[9 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[9 + 15 * ARR_X_LEN])
     );
 
 
@@ -7313,10 +6560,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[10 + 15 * ARR_X_LEN]),
 
-        .state(state[10 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[10 + 15 * ARR_X_LEN])
     );
 
 
@@ -7342,10 +6586,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[11 + 15 * ARR_X_LEN]),
 
-        .state(state[11 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[11 + 15 * ARR_X_LEN])
     );
 
 
@@ -7371,10 +6612,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[12 + 15 * ARR_X_LEN]),
 
-        .state(state[12 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[12 + 15 * ARR_X_LEN])
     );
 
 
@@ -7400,10 +6638,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[13 + 15 * ARR_X_LEN]),
 
-        .state(state[13 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[13 + 15 * ARR_X_LEN])
     );
 
 
@@ -7429,10 +6664,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[14 + 15 * ARR_X_LEN]),
 
-        .state(state[14 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[14 + 15 * ARR_X_LEN])
     );
 
 
@@ -7458,10 +6690,7 @@ module game_of_life #(
         .prev_out_data  (1'b0),
         .out_data       (cell_outs[15 + 15 * ARR_X_LEN]),
 
-        .state(state[15 + 15 * ARR_X_LEN]),
-
-        .vccd1(vccd1),
-        .vssd1(vssd1)
+        .state(state[15 + 15 * ARR_X_LEN])
     );
 
 
