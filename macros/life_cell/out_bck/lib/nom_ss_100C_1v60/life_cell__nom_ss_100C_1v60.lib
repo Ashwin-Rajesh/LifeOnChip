@@ -1,0 +1,460 @@
+library (life_cell) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 100.0;
+  nom_voltage                    : 1.60;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_2) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_3) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_4) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+
+  cell ("life_cell") {
+    pin("clk") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("d") {
+      direction : input;
+      capacitance : 0.0030;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.20884");
+	}
+	fall_constraint(scalar) {
+          values("-1.39574");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("4.19780");
+	}
+	fall_constraint(scalar) {
+          values("4.13765");
+	}
+      }
+    }
+    pin("dl") {
+      direction : input;
+      capacitance : 0.0030;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.60346");
+	}
+	fall_constraint(scalar) {
+          values("-1.31012");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("3.52511");
+	}
+	fall_constraint(scalar) {
+          values("3.34466");
+	}
+      }
+    }
+    pin("dr") {
+      direction : input;
+      capacitance : 0.0032;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.94899");
+	}
+	fall_constraint(scalar) {
+          values("-0.95775");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("2.25332");
+	}
+	fall_constraint(scalar) {
+          values("2.10903");
+	}
+      }
+    }
+    pin("in_data") {
+      direction : input;
+      capacitance : 0.0027;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.11107");
+	}
+	fall_constraint(scalar) {
+          values("-1.09114");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("1.19675");
+	}
+	fall_constraint(scalar) {
+          values("1.30495");
+	}
+      }
+    }
+    pin("l") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.78384");
+	}
+	fall_constraint(scalar) {
+          values("-0.75023");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("1.85808");
+	}
+	fall_constraint(scalar) {
+          values("1.65379");
+	}
+      }
+    }
+    pin("load_in") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.19097");
+	}
+	fall_constraint(scalar) {
+          values("-1.17265");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("1.45818");
+	}
+	fall_constraint(scalar) {
+          values("1.38645");
+	}
+      }
+    }
+    pin("load_out") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.38017");
+	}
+	fall_constraint(scalar) {
+          values("-0.37526");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.66572");
+	}
+	fall_constraint(scalar) {
+          values("0.57575");
+	}
+      }
+    }
+    pin("out_data") {
+      direction : output;
+      capacitance : 0.0009;
+      timing() {
+        related_pin : "clk";
+        timing_type : rising_edge;
+	cell_rise(template_1) {
+          values("1.49477,1.50521,1.53256,1.60511,1.83084,2.57227,5.02731");
+	}
+	rise_transition(template_1) {
+          values("0.03277,0.04152,0.06833,0.15833,0.47301,1.52727,5.00470");
+	}
+	cell_fall(template_2) {
+          values("1.39621,1.40614,1.43016,1.48391,1.61990,2.04153,3.43559");
+	}
+	fall_transition(template_2) {
+          values("0.03268,0.03937,0.05713,0.10715,0.27056,0.84149,2.74618");
+	}
+      }
+    }
+    pin("prev_out_data") {
+      direction : input;
+      capacitance : 0.0030;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.40562");
+	}
+	fall_constraint(scalar) {
+          values("-0.92646");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.46772");
+	}
+	fall_constraint(scalar) {
+          values("1.09642");
+	}
+      }
+    }
+    pin("r") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.04590");
+	}
+	fall_constraint(scalar) {
+          values("-1.12507");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("3.71521");
+	}
+	fall_constraint(scalar) {
+          values("3.77365");
+	}
+      }
+    }
+    pin("reset") {
+      direction : input;
+      capacitance : 0.0028;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.16577");
+	}
+	fall_constraint(scalar) {
+          values("-0.29752");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.54537");
+	}
+	fall_constraint(scalar) {
+          values("0.49178");
+	}
+      }
+    }
+    pin("run") {
+      direction : input;
+      capacitance : 0.0034;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.48832");
+	}
+	fall_constraint(scalar) {
+          values("-0.70992");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("1.44566");
+	}
+	fall_constraint(scalar) {
+          values("0.98969");
+	}
+      }
+    }
+    pin("shift") {
+      direction : input;
+      capacitance : 0.0027;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.46224");
+	}
+	fall_constraint(scalar) {
+          values("-0.54343");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("1.22858");
+	}
+	fall_constraint(scalar) {
+          values("1.16344");
+	}
+      }
+    }
+    pin("state") {
+      direction : output;
+      capacitance : 0.0005;
+      timing() {
+        related_pin : "clk";
+        timing_type : rising_edge;
+	cell_rise(template_3) {
+          values("1.49690,1.50716,1.53424,1.60665,1.83240,2.57394,5.02827");
+	}
+	rise_transition(template_3) {
+          values("0.03197,0.04077,0.06769,0.15802,0.47307,1.52760,5.00414");
+	}
+	cell_fall(template_4) {
+          values("1.40417,1.41410,1.43813,1.49183,1.62780,2.04932,3.44303");
+	}
+	fall_transition(template_4) {
+          values("0.03266,0.03938,0.05711,0.10711,0.27051,0.84142,2.74562");
+	}
+      }
+    }
+    pin("u") {
+      direction : input;
+      capacitance : 0.0030;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.23289");
+	}
+	fall_constraint(scalar) {
+          values("-1.44094");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("4.22790");
+	}
+	fall_constraint(scalar) {
+          values("4.11954");
+	}
+      }
+    }
+    pin("ul") {
+      direction : input;
+      capacitance : 0.0030;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.31294");
+	}
+	fall_constraint(scalar) {
+          values("-1.21499");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("2.75257");
+	}
+	fall_constraint(scalar) {
+          values("2.56240");
+	}
+      }
+    }
+    pin("ur") {
+      direction : input;
+      capacitance : 0.0032;
+      timing() {
+        related_pin : "clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-1.30324");
+	}
+	fall_constraint(scalar) {
+          values("-1.13317");
+	}
+      }
+      timing() {
+        related_pin : "clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("3.06551");
+	}
+	fall_constraint(scalar) {
+          values("2.95066");
+	}
+      }
+    }
+    pin("vccd1") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+    pin("vssd1") {
+      direction : inout;
+      capacitance : 0.0000;
+    }
+  }
+
+}

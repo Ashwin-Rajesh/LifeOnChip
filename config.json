@@ -1,0 +1,52 @@
+{
+    "PDK": "sky130A",    
+    "meta": {
+        "version": 2
+    },
+    "MACROS": {
+        "life_cell":{
+            "lib"   :{
+                "nom_tt_025C_1v80":"dir::macros/life_cell/out/lib/nom_tt_025C_1v80/life_cell__nom_tt_025C_1v80.lib",
+                "nom_ff_n40C_1v95":"dir::macros/life_cell/out/lib/nom_ff_n40C_1v95/life_cell__nom_ff_n40C_1v95.lib",
+                "nom_ss_100C_1v60":"dir::macros/life_cell/out/lib/nom_ss_100C_1v60/life_cell__nom_ss_100C_1v60.lib",
+                "min_tt_025C_1v80":"dir::macros/life_cell/out/lib/min_tt_025C_1v80/life_cell__min_tt_025C_1v80.lib",
+                "min_ff_n40C_1v95":"dir::macros/life_cell/out/lib/min_ff_n40C_1v95/life_cell__min_ff_n40C_1v95.lib",
+                "min_ss_100C_1v60":"dir::macros/life_cell/out/lib/min_ss_100C_1v60/life_cell__min_ss_100C_1v60.lib",
+                "max_tt_025C_1v80":"dir::macros/life_cell/out/lib/max_tt_025C_1v80/life_cell__max_tt_025C_1v80.lib",
+                "max_ff_n40C_1v95":"dir::macros/life_cell/out/lib/max_ff_n40C_1v95/life_cell__max_ff_n40C_1v95.lib",
+                "max_ss_100C_1v60":"dir::macros/life_cell/out/lib/max_ss_100C_1v60/life_cell__max_ss_100C_1v60.lib"
+            },
+            "gds"   :["dir::macros/life_cell/out/gds/life_cell.magic.gds"],
+            "lef"   :["dir::macros/life_cell/out/lef/life_cell.lef"],
+            "nl"    :["dir::macros/life_cell/out/nl/life_cell.nl.v"],
+            "spef":{
+                "nom_*":"dir::macros/life_cell/out/spef/nom_/life_cell.nom.spef",
+                "min_*":"dir::macros/life_cell/out/spef/min_/life_cell.min.spef",
+                "max_*":"dir::macros/life_cell/out/spef/max_/life_cell.max.spef"
+            }
+        }
+    },
+    "DESIGN_NAME": "game_of_life",
+    "VERILOG_FILES": ["src/game_of_life_gen.v"],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD":10,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 1600 1600",
+    "PL_TARGET_DENSITY_PCT": 100,
+    "FP_PDN_AUTO_ADJUST": true,
+    "FP_PDN_VPITCH":  85,
+    "FP_PDN_HPITCH":  85,
+    "FP_PDN_VOFFSET": 40,
+    "FP_PDN_HOFFSET": 40,
+    "VDD_NETS": [
+        "vccd1"
+    ],
+    "GND_NETS": [
+        "vssd1"
+    ],
+    "PDN_MACRO_CONNECTIONS": [
+        "arr_cell_* vccd1 vssd1 vccd1 vssd1"
+    ],
+    "FP_PDN_CHECK_NODES": false,
+    "MACRO_PLACEMENT_CFG": "constraints/macro_placement.cfg"
+}

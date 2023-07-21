@@ -1,0 +1,24 @@
+{
+    "PDK": "sky130A",
+    "DESIGN_NAME": "life_cell",
+    "DESIGN_IS_CORE": false,
+    "VERILOG_FILES": "life_cell.v",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk",
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 50 40",
+    "PL_TARGET_DENSITY_PCT": 100,
+    "FP_PDN_AUTO_ADJUST": true,
+    "FP_PDN_VPITCH":  25,
+    "FP_PDN_HPITCH":  25,
+    "FP_PDN_VOFFSET": 10,
+    "FP_PDN_HOFFSET": 10,
+    "FP_IO_MIN_DISTANCE": 2,
+    "FP_PIN_ORDER_CFG": "life_cell_io.cfg",
+    "VDD_NETS": [
+        "vccd1"
+    ],
+    "GND_NETS": [
+        "vssd1"
+    ]
+}

@@ -1,0 +1,3202 @@
+{
+  "creator": "Yosys 0.30 (git sha1 f7a8284c7b0, clang++ 11.1.0 -fPIC -Os)",
+  "modules": {
+    "life_cell": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "life_cell.v:3.1-70.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "run": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "u": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "l": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "r": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "ul": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "ur": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "dl": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "dr": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "load_in": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "in_data": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "load_out": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "prev_out_data": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "shift": {
+          "direction": "input",
+          "bits": [ 17 ]
+        },
+        "out_data": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "state": {
+          "direction": "output",
+          "bits": [ 19 ]
+        },
+        "vccd1": {
+          "direction": "inout",
+          "bits": [ 20 ]
+        },
+        "vssd1": {
+          "direction": "inout",
+          "bits": [ 21 ]
+        }
+      },
+      "cells": {
+        "$add$life_cell.v:55$37": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.27"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ]
+          }
+        },
+        "$add$life_cell.v:55$38": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+            "B": [ 7 ],
+            "Y": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ]
+          }
+        },
+        "$add$life_cell.v:55$39": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+            "B": [ 8 ],
+            "Y": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ]
+          }
+        },
+        "$add$life_cell.v:55$40": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ],
+            "B": [ 9 ],
+            "Y": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149 ]
+          }
+        },
+        "$add$life_cell.v:55$41": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149 ],
+            "B": [ 10 ],
+            "Y": [ 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ]
+          }
+        },
+        "$add$life_cell.v:55$42": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ],
+            "B": [ 11 ],
+            "Y": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213 ]
+          }
+        },
+        "$add$life_cell.v:55$43": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:55.22-55.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213 ],
+            "B": [ 12 ],
+            "Y": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ]
+          }
+        },
+        "$eq$life_cell.v:57$44": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:57.16-57.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "Y": [ 246 ]
+          }
+        },
+        "$eq$life_cell.v:59$46": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:59.21-59.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 247 ]
+          }
+        },
+        "$eq$life_cell.v:61$48": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:61.21-61.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "B": [ "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 248 ]
+          }
+        },
+        "$eq$life_cell.v:63$50": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:63.21-63.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "B": [ "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 249 ]
+          }
+        },
+        "$procdff$221": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 250 ],
+            "Q": [ 19 ]
+          }
+        },
+        "$procdff$222": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 251 ]
+          }
+        },
+        "$procdff$223": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 252 ]
+          }
+        },
+        "$procdff$224": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 253 ]
+          }
+        },
+        "$procdff$225": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 254 ]
+          }
+        },
+        "$procdff$226": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 255 ]
+          }
+        },
+        "$procdff$227": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 256 ]
+          }
+        },
+        "$procdff$228": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 257 ]
+          }
+        },
+        "$procdff$229": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 258 ]
+          }
+        },
+        "$procdff$230": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 259 ]
+          }
+        },
+        "$procdff$231": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x" ],
+            "Q": [ 260 ]
+          }
+        },
+        "$procdff$232": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "Q": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292 ]
+          }
+        },
+        "$procdff$233": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:28.5-35.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 293 ],
+            "Q": [ 18 ]
+          }
+        },
+        "$procmux$101": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 294 ],
+            "S": [ 4 ],
+            "Y": [ 295 ]
+          }
+        },
+        "$procmux$104": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 295 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 296 ]
+          }
+        },
+        "$procmux$107": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 251 ],
+            "B": [ 296 ],
+            "S": [ 4 ],
+            "Y": [ 297 ]
+          }
+        },
+        "$procmux$110": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 297 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 298 ]
+          }
+        },
+        "$procmux$113": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292 ],
+            "B": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+            "S": [ 4 ],
+            "Y": [ 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330 ]
+          }
+        },
+        "$procmux$116": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330 ],
+            "B": [ "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x" ],
+            "S": [ 3 ],
+            "Y": [ 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362 ]
+          }
+        },
+        "$procmux$119": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 260 ],
+            "B": [ 19 ],
+            "S": [ 4 ],
+            "Y": [ 363 ]
+          }
+        },
+        "$procmux$122": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 363 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 364 ]
+          }
+        },
+        "$procmux$125": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 259 ],
+            "B": [ 12 ],
+            "S": [ 4 ],
+            "Y": [ 365 ]
+          }
+        },
+        "$procmux$128": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 365 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 366 ]
+          }
+        },
+        "$procmux$131": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 258 ],
+            "B": [ 11 ],
+            "S": [ 4 ],
+            "Y": [ 367 ]
+          }
+        },
+        "$procmux$134": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 367 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 368 ]
+          }
+        },
+        "$procmux$137": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 257 ],
+            "B": [ 10 ],
+            "S": [ 4 ],
+            "Y": [ 369 ]
+          }
+        },
+        "$procmux$140": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 369 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 370 ]
+          }
+        },
+        "$procmux$143": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 256 ],
+            "B": [ 9 ],
+            "S": [ 4 ],
+            "Y": [ 371 ]
+          }
+        },
+        "$procmux$146": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 371 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 372 ]
+          }
+        },
+        "$procmux$149": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 255 ],
+            "B": [ 8 ],
+            "S": [ 4 ],
+            "Y": [ 373 ]
+          }
+        },
+        "$procmux$152": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 373 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 374 ]
+          }
+        },
+        "$procmux$155": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 254 ],
+            "B": [ 7 ],
+            "S": [ 4 ],
+            "Y": [ 375 ]
+          }
+        },
+        "$procmux$158": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 375 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 376 ]
+          }
+        },
+        "$procmux$161": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 253 ],
+            "B": [ 6 ],
+            "S": [ 4 ],
+            "Y": [ 377 ]
+          }
+        },
+        "$procmux$164": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 377 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 378 ]
+          }
+        },
+        "$procmux$167": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 252 ],
+            "B": [ 5 ],
+            "S": [ 4 ],
+            "Y": [ 379 ]
+          }
+        },
+        "$procmux$170": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 379 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 380 ]
+          }
+        },
+        "$procmux$173": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362 ],
+            "B": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292 ],
+            "S": [ 3 ],
+            "Y": [ 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412 ]
+          }
+        },
+        "$procmux$176": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 364 ],
+            "B": [ 260 ],
+            "S": [ 3 ],
+            "Y": [ 413 ]
+          }
+        },
+        "$procmux$179": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 366 ],
+            "B": [ 259 ],
+            "S": [ 3 ],
+            "Y": [ 414 ]
+          }
+        },
+        "$procmux$182": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 368 ],
+            "B": [ 258 ],
+            "S": [ 3 ],
+            "Y": [ 415 ]
+          }
+        },
+        "$procmux$185": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 370 ],
+            "B": [ 257 ],
+            "S": [ 3 ],
+            "Y": [ 416 ]
+          }
+        },
+        "$procmux$188": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 372 ],
+            "B": [ 256 ],
+            "S": [ 3 ],
+            "Y": [ 417 ]
+          }
+        },
+        "$procmux$191": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 374 ],
+            "B": [ 255 ],
+            "S": [ 3 ],
+            "Y": [ 418 ]
+          }
+        },
+        "$procmux$194": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 376 ],
+            "B": [ 254 ],
+            "S": [ 3 ],
+            "Y": [ 419 ]
+          }
+        },
+        "$procmux$197": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 378 ],
+            "B": [ 253 ],
+            "S": [ 3 ],
+            "Y": [ 420 ]
+          }
+        },
+        "$procmux$200": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 380 ],
+            "B": [ 252 ],
+            "S": [ 3 ],
+            "Y": [ 421 ]
+          }
+        },
+        "$procmux$203": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 298 ],
+            "B": [ 251 ],
+            "S": [ 3 ],
+            "Y": [ 422 ]
+          }
+        },
+        "$procmux$205": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:42.17-42.24|life_cell.v:42.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 14 ],
+            "S": [ 13 ],
+            "Y": [ 423 ]
+          }
+        },
+        "$procmux$208": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 423 ],
+            "B": [ 296 ],
+            "S": [ 4 ],
+            "Y": [ 424 ]
+          }
+        },
+        "$procmux$211": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 424 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 250 ]
+          }
+        },
+        "$procmux$213": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "life_cell.v:33.17-33.22|life_cell.v:33.14-34.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 16 ],
+            "S": [ 17 ],
+            "Y": [ 425 ]
+          }
+        },
+        "$procmux$216": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:31.17-31.25|life_cell.v:31.14-34.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 425 ],
+            "B": [ 19 ],
+            "S": [ 15 ],
+            "Y": [ 426 ]
+          }
+        },
+        "$procmux$219": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:29.12-29.17|life_cell.v:29.9-34.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 426 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 293 ]
+          }
+        },
+        "$procmux$54": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:63.21-63.31|life_cell.v:63.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 249 ],
+            "Y": [ 427 ]
+          }
+        },
+        "$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:61.21-61.31|life_cell.v:61.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 427 ],
+            "B": [ "x" ],
+            "S": [ 248 ],
+            "Y": [ 428 ]
+          }
+        },
+        "$procmux$60": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:59.21-59.31|life_cell.v:59.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 428 ],
+            "B": [ "x" ],
+            "S": [ 247 ],
+            "Y": [ 429 ]
+          }
+        },
+        "$procmux$63": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:57.16-57.26|life_cell.v:57.13-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 429 ],
+            "B": [ "x" ],
+            "S": [ 246 ],
+            "Y": [ 430 ]
+          }
+        },
+        "$procmux$65": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 430 ],
+            "S": [ 4 ],
+            "Y": [ 431 ]
+          }
+        },
+        "$procmux$68": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 431 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 432 ]
+          }
+        },
+        "$procmux$72": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:61.21-61.31|life_cell.v:61.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 432 ],
+            "B": [ 19 ],
+            "S": [ 248 ],
+            "Y": [ 433 ]
+          }
+        },
+        "$procmux$75": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:59.21-59.31|life_cell.v:59.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 433 ],
+            "B": [ "x" ],
+            "S": [ 247 ],
+            "Y": [ 434 ]
+          }
+        },
+        "$procmux$78": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:57.16-57.26|life_cell.v:57.13-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 434 ],
+            "B": [ "x" ],
+            "S": [ 246 ],
+            "Y": [ 435 ]
+          }
+        },
+        "$procmux$80": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 435 ],
+            "S": [ 4 ],
+            "Y": [ 436 ]
+          }
+        },
+        "$procmux$83": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 436 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 437 ]
+          }
+        },
+        "$procmux$87": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:59.21-59.31|life_cell.v:59.18-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 437 ],
+            "B": [ "0" ],
+            "S": [ 247 ],
+            "Y": [ 438 ]
+          }
+        },
+        "$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:57.16-57.26|life_cell.v:57.13-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 438 ],
+            "B": [ "x" ],
+            "S": [ 246 ],
+            "Y": [ 439 ]
+          }
+        },
+        "$procmux$92": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:40.17-40.20|life_cell.v:40.14-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 439 ],
+            "S": [ 4 ],
+            "Y": [ 440 ]
+          }
+        },
+        "$procmux$95": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:38.12-38.17|life_cell.v:38.9-43.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 440 ],
+            "B": [ "x" ],
+            "S": [ 3 ],
+            "Y": [ 441 ]
+          }
+        },
+        "$procmux$99": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "life_cell.v:57.16-57.26|life_cell.v:57.13-66.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 441 ],
+            "B": [ "0" ],
+            "S": [ 246 ],
+            "Y": [ 294 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\get_next_state$func$life_cell.v:41$1.$result[0:0]$4": {
+          "hide_name": 1,
+          "bits": [ 422 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.a[0:0]$5": {
+          "hide_name": 1,
+          "bits": [ 421 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.b[0:0]$6": {
+          "hide_name": 1,
+          "bits": [ 420 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.c[0:0]$7": {
+          "hide_name": 1,
+          "bits": [ 419 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.count[31:0]$14": {
+          "hide_name": 1,
+          "bits": [ 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.curr[0:0]$13": {
+          "hide_name": 1,
+          "bits": [ 413 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.d[0:0]$8": {
+          "hide_name": 1,
+          "bits": [ 418 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.e[0:0]$9": {
+          "hide_name": 1,
+          "bits": [ 417 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.f[0:0]$10": {
+          "hide_name": 1,
+          "bits": [ 416 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.g[0:0]$11": {
+          "hide_name": 1,
+          "bits": [ 415 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\get_next_state$func$life_cell.v:41$1.h[0:0]$12": {
+          "hide_name": 1,
+          "bits": [ 414 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$0\\out_data[0:0]": {
+          "hide_name": 1,
+          "bits": [ 293 ],
+          "attributes": {
+            "src": "life_cell.v:28.5-35.8"
+          }
+        },
+        "$0\\state[0:0]": {
+          "hide_name": 1,
+          "bits": [ 250 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.$result[0:0]$15": {
+          "hide_name": 1,
+          "bits": [ 422 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.a[0:0]$16": {
+          "hide_name": 1,
+          "bits": [ 421 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.b[0:0]$17": {
+          "hide_name": 1,
+          "bits": [ 420 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.c[0:0]$18": {
+          "hide_name": 1,
+          "bits": [ 419 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.count[31:0]$25": {
+          "hide_name": 1,
+          "bits": [ 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.curr[0:0]$24": {
+          "hide_name": 1,
+          "bits": [ 413 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.d[0:0]$19": {
+          "hide_name": 1,
+          "bits": [ 418 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.e[0:0]$20": {
+          "hide_name": 1,
+          "bits": [ 417 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.f[0:0]$21": {
+          "hide_name": 1,
+          "bits": [ 416 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.g[0:0]$22": {
+          "hide_name": 1,
+          "bits": [ 415 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$1\\get_next_state$func$life_cell.v:41$1.h[0:0]$23": {
+          "hide_name": 1,
+          "bits": [ 414 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.$result[0:0]$26": {
+          "hide_name": 1,
+          "bits": [ 298 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.a[0:0]$27": {
+          "hide_name": 1,
+          "bits": [ 380 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.b[0:0]$28": {
+          "hide_name": 1,
+          "bits": [ 378 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.c[0:0]$29": {
+          "hide_name": 1,
+          "bits": [ 376 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.count[31:0]$36": {
+          "hide_name": 1,
+          "bits": [ 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.curr[0:0]$35": {
+          "hide_name": 1,
+          "bits": [ 364 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.d[0:0]$30": {
+          "hide_name": 1,
+          "bits": [ 374 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.e[0:0]$31": {
+          "hide_name": 1,
+          "bits": [ 372 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.f[0:0]$32": {
+          "hide_name": 1,
+          "bits": [ 370 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.g[0:0]$33": {
+          "hide_name": 1,
+          "bits": [ 368 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$2\\get_next_state$func$life_cell.v:41$1.h[0:0]$34": {
+          "hide_name": 1,
+          "bits": [ 366 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$3\\get_next_state$func$life_cell.v:41$1.$result[0:0]$45": {
+          "hide_name": 1,
+          "bits": [ 296 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$4\\get_next_state$func$life_cell.v:41$1.$result[0:0]$47": {
+          "hide_name": 1,
+          "bits": [ 441 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$5\\get_next_state$func$life_cell.v:41$1.$result[0:0]$49": {
+          "hide_name": 1,
+          "bits": [ 437 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$6\\get_next_state$func$life_cell.v:41$1.$result[0:0]$51": {
+          "hide_name": 1,
+          "bits": [ 432 ],
+          "attributes": {
+            "src": "life_cell.v:37.5-44.8"
+          }
+        },
+        "$add$life_cell.v:55$37_Y": {
+          "hide_name": 1,
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.27"
+          }
+        },
+        "$add$life_cell.v:55$38_Y": {
+          "hide_name": 1,
+          "bits": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.31"
+          }
+        },
+        "$add$life_cell.v:55$39_Y": {
+          "hide_name": 1,
+          "bits": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.35"
+          }
+        },
+        "$add$life_cell.v:55$40_Y": {
+          "hide_name": 1,
+          "bits": [ 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.39"
+          }
+        },
+        "$add$life_cell.v:55$41_Y": {
+          "hide_name": 1,
+          "bits": [ 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.43"
+          }
+        },
+        "$add$life_cell.v:55$42_Y": {
+          "hide_name": 1,
+          "bits": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.47"
+          }
+        },
+        "$add$life_cell.v:55$43_Y": {
+          "hide_name": 1,
+          "bits": [ 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245 ],
+          "attributes": {
+            "src": "life_cell.v:55.22-55.51"
+          }
+        },
+        "$eq$life_cell.v:57$44_Y": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+            "src": "life_cell.v:57.16-57.26"
+          }
+        },
+        "$eq$life_cell.v:59$46_Y": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+            "src": "life_cell.v:59.21-59.31"
+          }
+        },
+        "$eq$life_cell.v:61$48_Y": {
+          "hide_name": 1,
+          "bits": [ 248 ],
+          "attributes": {
+            "src": "life_cell.v:61.21-61.31"
+          }
+        },
+        "$eq$life_cell.v:63$50_Y": {
+          "hide_name": 1,
+          "bits": [ 249 ],
+          "attributes": {
+            "src": "life_cell.v:63.21-63.31"
+          }
+        },
+        "$procmux$100_CMP": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$procmux$101_Y": {
+          "hide_name": 1,
+          "bits": [ 295 ],
+          "attributes": {
+          }
+        },
+        "$procmux$102_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$104_Y": {
+          "hide_name": 1,
+          "bits": [ 296 ],
+          "attributes": {
+          }
+        },
+        "$procmux$105_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$107_Y": {
+          "hide_name": 1,
+          "bits": [ 297 ],
+          "attributes": {
+          }
+        },
+        "$procmux$108_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$110_Y": {
+          "hide_name": 1,
+          "bits": [ 298 ],
+          "attributes": {
+          }
+        },
+        "$procmux$111_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$113_Y": {
+          "hide_name": 1,
+          "bits": [ 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330 ],
+          "attributes": {
+          }
+        },
+        "$procmux$114_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$116_Y": {
+          "hide_name": 1,
+          "bits": [ 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362 ],
+          "attributes": {
+          }
+        },
+        "$procmux$117_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$119_Y": {
+          "hide_name": 1,
+          "bits": [ 363 ],
+          "attributes": {
+          }
+        },
+        "$procmux$120_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$122_Y": {
+          "hide_name": 1,
+          "bits": [ 364 ],
+          "attributes": {
+          }
+        },
+        "$procmux$123_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$125_Y": {
+          "hide_name": 1,
+          "bits": [ 365 ],
+          "attributes": {
+          }
+        },
+        "$procmux$126_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$128_Y": {
+          "hide_name": 1,
+          "bits": [ 366 ],
+          "attributes": {
+          }
+        },
+        "$procmux$129_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$131_Y": {
+          "hide_name": 1,
+          "bits": [ 367 ],
+          "attributes": {
+          }
+        },
+        "$procmux$132_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$134_Y": {
+          "hide_name": 1,
+          "bits": [ 368 ],
+          "attributes": {
+          }
+        },
+        "$procmux$135_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$137_Y": {
+          "hide_name": 1,
+          "bits": [ 369 ],
+          "attributes": {
+          }
+        },
+        "$procmux$138_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$140_Y": {
+          "hide_name": 1,
+          "bits": [ 370 ],
+          "attributes": {
+          }
+        },
+        "$procmux$141_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$143_Y": {
+          "hide_name": 1,
+          "bits": [ 371 ],
+          "attributes": {
+          }
+        },
+        "$procmux$144_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$146_Y": {
+          "hide_name": 1,
+          "bits": [ 372 ],
+          "attributes": {
+          }
+        },
+        "$procmux$147_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$149_Y": {
+          "hide_name": 1,
+          "bits": [ 373 ],
+          "attributes": {
+          }
+        },
+        "$procmux$150_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$152_Y": {
+          "hide_name": 1,
+          "bits": [ 374 ],
+          "attributes": {
+          }
+        },
+        "$procmux$153_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$155_Y": {
+          "hide_name": 1,
+          "bits": [ 375 ],
+          "attributes": {
+          }
+        },
+        "$procmux$156_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$158_Y": {
+          "hide_name": 1,
+          "bits": [ 376 ],
+          "attributes": {
+          }
+        },
+        "$procmux$159_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$161_Y": {
+          "hide_name": 1,
+          "bits": [ 377 ],
+          "attributes": {
+          }
+        },
+        "$procmux$162_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$164_Y": {
+          "hide_name": 1,
+          "bits": [ 378 ],
+          "attributes": {
+          }
+        },
+        "$procmux$165_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$167_Y": {
+          "hide_name": 1,
+          "bits": [ 379 ],
+          "attributes": {
+          }
+        },
+        "$procmux$168_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$170_Y": {
+          "hide_name": 1,
+          "bits": [ 380 ],
+          "attributes": {
+          }
+        },
+        "$procmux$171_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$173_Y": {
+          "hide_name": 1,
+          "bits": [ 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412 ],
+          "attributes": {
+          }
+        },
+        "$procmux$174_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$176_Y": {
+          "hide_name": 1,
+          "bits": [ 413 ],
+          "attributes": {
+          }
+        },
+        "$procmux$177_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$179_Y": {
+          "hide_name": 1,
+          "bits": [ 414 ],
+          "attributes": {
+          }
+        },
+        "$procmux$180_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$182_Y": {
+          "hide_name": 1,
+          "bits": [ 415 ],
+          "attributes": {
+          }
+        },
+        "$procmux$183_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$185_Y": {
+          "hide_name": 1,
+          "bits": [ 416 ],
+          "attributes": {
+          }
+        },
+        "$procmux$186_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$188_Y": {
+          "hide_name": 1,
+          "bits": [ 417 ],
+          "attributes": {
+          }
+        },
+        "$procmux$189_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$191_Y": {
+          "hide_name": 1,
+          "bits": [ 418 ],
+          "attributes": {
+          }
+        },
+        "$procmux$192_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$194_Y": {
+          "hide_name": 1,
+          "bits": [ 419 ],
+          "attributes": {
+          }
+        },
+        "$procmux$195_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$197_Y": {
+          "hide_name": 1,
+          "bits": [ 420 ],
+          "attributes": {
+          }
+        },
+        "$procmux$198_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$200_Y": {
+          "hide_name": 1,
+          "bits": [ 421 ],
+          "attributes": {
+          }
+        },
+        "$procmux$201_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$203_Y": {
+          "hide_name": 1,
+          "bits": [ 422 ],
+          "attributes": {
+          }
+        },
+        "$procmux$204_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$205_Y": {
+          "hide_name": 1,
+          "bits": [ 423 ],
+          "attributes": {
+          }
+        },
+        "$procmux$206_CMP": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$procmux$208_Y": {
+          "hide_name": 1,
+          "bits": [ 424 ],
+          "attributes": {
+          }
+        },
+        "$procmux$209_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$211_Y": {
+          "hide_name": 1,
+          "bits": [ 250 ],
+          "attributes": {
+          }
+        },
+        "$procmux$212_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$213_Y": {
+          "hide_name": 1,
+          "bits": [ 425 ],
+          "attributes": {
+          }
+        },
+        "$procmux$214_CMP": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "$procmux$216_Y": {
+          "hide_name": 1,
+          "bits": [ 426 ],
+          "attributes": {
+          }
+        },
+        "$procmux$217_CMP": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$procmux$219_Y": {
+          "hide_name": 1,
+          "bits": [ 293 ],
+          "attributes": {
+          }
+        },
+        "$procmux$220_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$54_Y": {
+          "hide_name": 1,
+          "bits": [ 427 ],
+          "attributes": {
+          }
+        },
+        "$procmux$55_CMP": {
+          "hide_name": 1,
+          "bits": [ 249 ],
+          "attributes": {
+          }
+        },
+        "$procmux$57_Y": {
+          "hide_name": 1,
+          "bits": [ 428 ],
+          "attributes": {
+          }
+        },
+        "$procmux$58_CMP": {
+          "hide_name": 1,
+          "bits": [ 248 ],
+          "attributes": {
+          }
+        },
+        "$procmux$60_Y": {
+          "hide_name": 1,
+          "bits": [ 429 ],
+          "attributes": {
+          }
+        },
+        "$procmux$61_CMP": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$procmux$63_Y": {
+          "hide_name": 1,
+          "bits": [ 430 ],
+          "attributes": {
+          }
+        },
+        "$procmux$64_CMP": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$procmux$65_Y": {
+          "hide_name": 1,
+          "bits": [ 431 ],
+          "attributes": {
+          }
+        },
+        "$procmux$66_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$68_Y": {
+          "hide_name": 1,
+          "bits": [ 432 ],
+          "attributes": {
+          }
+        },
+        "$procmux$69_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$72_Y": {
+          "hide_name": 1,
+          "bits": [ 433 ],
+          "attributes": {
+          }
+        },
+        "$procmux$73_CMP": {
+          "hide_name": 1,
+          "bits": [ 248 ],
+          "attributes": {
+          }
+        },
+        "$procmux$75_Y": {
+          "hide_name": 1,
+          "bits": [ 434 ],
+          "attributes": {
+          }
+        },
+        "$procmux$76_CMP": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$procmux$78_Y": {
+          "hide_name": 1,
+          "bits": [ 435 ],
+          "attributes": {
+          }
+        },
+        "$procmux$79_CMP": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$procmux$80_Y": {
+          "hide_name": 1,
+          "bits": [ 436 ],
+          "attributes": {
+          }
+        },
+        "$procmux$81_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$83_Y": {
+          "hide_name": 1,
+          "bits": [ 437 ],
+          "attributes": {
+          }
+        },
+        "$procmux$84_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$87_Y": {
+          "hide_name": 1,
+          "bits": [ 438 ],
+          "attributes": {
+          }
+        },
+        "$procmux$88_CMP": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$procmux$90_Y": {
+          "hide_name": 1,
+          "bits": [ 439 ],
+          "attributes": {
+          }
+        },
+        "$procmux$91_CMP": {
+          "hide_name": 1,
+          "bits": [ 246 ],
+          "attributes": {
+          }
+        },
+        "$procmux$92_Y": {
+          "hide_name": 1,
+          "bits": [ 440 ],
+          "attributes": {
+          }
+        },
+        "$procmux$93_CMP": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        },
+        "$procmux$95_Y": {
+          "hide_name": 1,
+          "bits": [ 441 ],
+          "attributes": {
+          }
+        },
+        "$procmux$96_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "$procmux$99_Y": {
+          "hide_name": 1,
+          "bits": [ 294 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "life_cell.v:5.11-5.14"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "life_cell.v:9.14-9.15"
+          }
+        },
+        "dl": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "life_cell.v:9.31-9.33"
+          }
+        },
+        "dr": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "life_cell.v:9.35-9.37"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.$result": {
+          "hide_name": 0,
+          "bits": [ 251 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:0.0-0.0"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.a": {
+          "hide_name": 0,
+          "bits": [ 252 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.15-49.16"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.b": {
+          "hide_name": 0,
+          "bits": [ 253 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.18-49.19"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.c": {
+          "hide_name": 0,
+          "bits": [ 254 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.21-49.22"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.count": {
+          "hide_name": 0,
+          "bits": [ 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292 ],
+          "signed": 1,
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:53.17-53.22"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.curr": {
+          "hide_name": 0,
+          "bits": [ 260 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:51.15-51.19"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.d": {
+          "hide_name": 0,
+          "bits": [ 255 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.24-49.25"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.e": {
+          "hide_name": 0,
+          "bits": [ 256 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.27-49.28"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.f": {
+          "hide_name": 0,
+          "bits": [ 257 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.30-49.31"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.g": {
+          "hide_name": 0,
+          "bits": [ 258 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.33-49.34"
+          }
+        },
+        "get_next_state$func$life_cell.v:41$1.h": {
+          "hide_name": 0,
+          "bits": [ 259 ],
+          "attributes": {
+            "nosync": "00000000000000000000000000000001",
+            "src": "life_cell.v:49.36-49.37"
+          }
+        },
+        "in_data": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "life_cell.v:12.13-12.20"
+          }
+        },
+        "l": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "life_cell.v:9.17-9.18"
+          }
+        },
+        "load_in": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "life_cell.v:11.13-11.20"
+          }
+        },
+        "load_out": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "life_cell.v:14.13-14.21"
+          }
+        },
+        "out_data": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "life_cell.v:17.13-17.21"
+          }
+        },
+        "prev_out_data": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "life_cell.v:15.13-15.26"
+          }
+        },
+        "r": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "life_cell.v:9.20-9.21"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "life_cell.v:6.11-6.16"
+          }
+        },
+        "run": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "life_cell.v:8.11-8.14"
+          }
+        },
+        "shift": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "life_cell.v:16.13-16.18"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "life_cell.v:19.12-19.17"
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "life_cell.v:9.11-9.12"
+          }
+        },
+        "ul": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "life_cell.v:9.23-9.25"
+          }
+        },
+        "ur": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "life_cell.v:9.27-9.29"
+          }
+        },
+        "vccd1": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "life_cell.v:22.11-22.16"
+          }
+        },
+        "vssd1": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "life_cell.v:23.11-23.16"
+          }
+        }
+      }
+    }
+  }
+}

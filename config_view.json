@@ -1,0 +1,10 @@
+{
+    "PDK": "sky130A",    
+    "meta": {
+        "version": 2,
+        "flow":[
+            "OpenROAD.OpenGUI"
+        ]
+    },
+    "DESIGN_NAME": "game_of_life"
+}
