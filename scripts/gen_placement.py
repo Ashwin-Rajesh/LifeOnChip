@@ -5,8 +5,8 @@ import sys
 ARR_X_LEN = 8
 ARR_Y_LEN = 8
 
-X_PITCH = 85
-Y_PITCH = 85
+X_PITCH = 80
+Y_PITCH = 80
 X_INIT  = 40
 Y_INIT  = 40
 
