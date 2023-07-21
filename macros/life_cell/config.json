@@ -14,11 +14,5 @@
     "FP_PDN_VOFFSET": 10,
     "FP_PDN_HOFFSET": 10,
     "FP_IO_MIN_DISTANCE": 2,
-    "FP_PIN_ORDER_CFG": "life_cell_io.cfg",
-    "VDD_NETS": [
-        "vccd1"
-    ],
-    "GND_NETS": [
-        "vssd1"
-    ]
+    "FP_PIN_ORDER_CFG": "life_cell_io.cfg"
 }

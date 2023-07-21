@@ -15,9 +15,7 @@ module life_cell (clk,
     state,
     u,
     ul,
-    ur,
-    vccd1,
-    vssd1);
+    ur);
  input clk;
  input d;
  input dl;
@@ -36,8 +34,6 @@ module life_cell (clk,
  input u;
  input ul;
  input ur;
- inout vccd1;
- inout vssd1;
 
  wire _00_;
  wire _01_;
@@ -224,7 +220,7 @@ module life_cell (clk,
  sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_17 ();
  sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_18 ();
  sky130_fd_sc_hd__tapvpwrvgnd_1 TAP_19 ();
- sky130_fd_sc_hd__clkbuf_1 input1 (.A(d),
+ sky130_fd_sc_hd__buf_1 input1 (.A(d),
     .X(net1));
  sky130_fd_sc_hd__clkbuf_1 input2 (.A(dl),
     .X(net2));
@@ -236,7 +232,7 @@ module life_cell (clk,
     .X(net5));
  sky130_fd_sc_hd__clkbuf_1 input6 (.A(load_in),
     .X(net6));
- sky130_fd_sc_hd__clkbuf_1 input7 (.A(load_out),
+ sky130_fd_sc_hd__buf_1 input7 (.A(load_out),
     .X(net7));
  sky130_fd_sc_hd__clkbuf_1 input8 (.A(prev_out_data),
     .X(net8));
@@ -244,7 +240,7 @@ module life_cell (clk,
     .X(net9));
  sky130_fd_sc_hd__buf_1 input10 (.A(reset),
     .X(net10));
- sky130_fd_sc_hd__buf_1 input11 (.A(run),
+ sky130_fd_sc_hd__clkbuf_1 input11 (.A(run),
     .X(net11));
  sky130_fd_sc_hd__clkbuf_1 input12 (.A(shift),
     .X(net12));
@@ -264,38 +260,43 @@ module life_cell (clk,
     .X(clknet_1_0__leaf_clk));
  sky130_fd_sc_hd__clkbuf_16 clkbuf_1_1__f_clk (.A(clknet_0_clk),
     .X(clknet_1_1__leaf_clk));
- sky130_fd_sc_hd__decap_4 FILLER_0_24 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_29 ();
- sky130_fd_sc_hd__fill_2 FILLER_0_47 ();
- sky130_fd_sc_hd__decap_3 FILLER_0_53 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_3 ();
+ sky130_fd_sc_hd__decap_8 FILLER_0_14 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_26 ();
+ sky130_ef_sc_hd__decap_12 FILLER_0_29 ();
+ sky130_fd_sc_hd__fill_2 FILLER_0_48 ();
  sky130_fd_sc_hd__decap_6 FILLER_0_57 ();
  sky130_fd_sc_hd__fill_1 FILLER_0_63 ();
- sky130_fd_sc_hd__decap_4 FILLER_0_68 ();
- sky130_fd_sc_hd__fill_1 FILLER_1_23 ();
- sky130_fd_sc_hd__decap_3 FILLER_1_37 ();
- sky130_fd_sc_hd__fill_2 FILLER_1_54 ();
+ sky130_fd_sc_hd__decap_6 FILLER_0_68 ();
+ sky130_fd_sc_hd__fill_1 FILLER_0_74 ();
+ sky130_fd_sc_hd__fill_2 FILLER_1_12 ();
+ sky130_fd_sc_hd__decap_3 FILLER_1_20 ();
+ sky130_fd_sc_hd__decap_3 FILLER_1_41 ();
+ sky130_fd_sc_hd__fill_1 FILLER_1_55 ();
  sky130_fd_sc_hd__decap_8 FILLER_1_73 ();
- sky130_ef_sc_hd__decap_12 FILLER_2_6 ();
- sky130_fd_sc_hd__decap_8 FILLER_2_18 ();
+ sky130_fd_sc_hd__fill_2 FILLER_2_3 ();
+ sky130_ef_sc_hd__decap_12 FILLER_2_14 ();
  sky130_fd_sc_hd__fill_2 FILLER_2_26 ();
- sky130_fd_sc_hd__decap_4 FILLER_2_76 ();
- sky130_fd_sc_hd__fill_1 FILLER_2_80 ();
- sky130_fd_sc_hd__decap_8 FILLER_3_6 ();
- sky130_fd_sc_hd__decap_3 FILLER_3_14 ();
- sky130_fd_sc_hd__fill_1 FILLER_3_31 ();
- sky130_fd_sc_hd__fill_1 FILLER_3_48 ();
- sky130_fd_sc_hd__decap_6 FILLER_3_71 ();
- sky130_fd_sc_hd__fill_1 FILLER_3_77 ();
- sky130_fd_sc_hd__decap_6 FILLER_4_3 ();
- sky130_fd_sc_hd__decap_4 FILLER_4_49 ();
- sky130_fd_sc_hd__decap_6 FILLER_4_67 ();
- sky130_fd_sc_hd__decap_4 FILLER_4_76 ();
- sky130_fd_sc_hd__fill_1 FILLER_4_80 ();
- sky130_ef_sc_hd__decap_12 FILLER_5_9 ();
- sky130_fd_sc_hd__decap_4 FILLER_5_21 ();
- sky130_fd_sc_hd__fill_2 FILLER_5_29 ();
- sky130_fd_sc_hd__decap_6 FILLER_5_50 ();
+ sky130_fd_sc_hd__decap_3 FILLER_2_29 ();
+ sky130_fd_sc_hd__fill_1 FILLER_2_35 ();
+ sky130_fd_sc_hd__fill_2 FILLER_2_43 ();
+ sky130_fd_sc_hd__decap_8 FILLER_2_70 ();
+ sky130_fd_sc_hd__fill_1 FILLER_3_6 ();
+ sky130_fd_sc_hd__decap_3 FILLER_3_10 ();
+ sky130_fd_sc_hd__decap_3 FILLER_3_53 ();
+ sky130_fd_sc_hd__decap_3 FILLER_3_63 ();
+ sky130_fd_sc_hd__fill_2 FILLER_3_73 ();
+ sky130_fd_sc_hd__decap_3 FILLER_3_78 ();
+ sky130_fd_sc_hd__decap_4 FILLER_4_12 ();
+ sky130_fd_sc_hd__decap_4 FILLER_4_29 ();
+ sky130_fd_sc_hd__fill_1 FILLER_4_59 ();
+ sky130_fd_sc_hd__fill_1 FILLER_4_71 ();
+ sky130_fd_sc_hd__fill_2 FILLER_5_3 ();
+ sky130_fd_sc_hd__decap_3 FILLER_5_40 ();
+ sky130_fd_sc_hd__decap_8 FILLER_5_46 ();
+ sky130_fd_sc_hd__fill_2 FILLER_5_54 ();
  sky130_fd_sc_hd__decap_6 FILLER_5_57 ();
  sky130_fd_sc_hd__fill_1 FILLER_5_63 ();
  sky130_fd_sc_hd__decap_4 FILLER_5_67 ();
+ sky130_fd_sc_hd__fill_1 FILLER_5_71 ();
 endmodule

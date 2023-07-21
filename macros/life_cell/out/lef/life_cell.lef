@@ -7,6 +7,26 @@ MACRO life_cell
   FOREIGN life_cell ;
   ORIGIN 0.000 0.000 ;
   SIZE 50.000 BY 40.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 27.220 10.640 28.820 27.440 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 14.720 10.640 16.320 27.440 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 39.720 10.640 41.320 27.440 ;
+    END
+  END VPWR
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -49,7 +69,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 10.920 4.000 11.520 ;
+        RECT 0.000 15.000 4.000 15.600 ;
     END
   END in_data
   PIN l
@@ -58,7 +78,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 19.080 4.000 19.680 ;
+        RECT 0.000 24.520 4.000 25.120 ;
     END
   END l
   PIN load_in
@@ -67,7 +87,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 2.760 4.000 3.360 ;
+        RECT 0.000 5.480 4.000 6.080 ;
     END
   END load_in
   PIN load_out
@@ -76,7 +96,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 0.000 35.400 4.000 36.000 ;
+        RECT 0.000 34.040 4.000 34.640 ;
     END
   END load_out
   PIN out_data
@@ -103,7 +123,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 46.000 19.080 50.000 19.680 ;
+        RECT 46.000 24.520 50.000 25.120 ;
     END
   END r
   PIN reset
@@ -112,7 +132,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 46.000 35.400 50.000 36.000 ;
+        RECT 46.000 34.040 50.000 34.640 ;
     END
   END reset
   PIN run
@@ -121,7 +141,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 46.000 2.760 50.000 3.360 ;
+        RECT 46.000 5.480 50.000 6.080 ;
     END
   END run
   PIN shift
@@ -130,7 +150,7 @@ MACRO life_cell
     ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met3 ;
-        RECT 46.000 10.920 50.000 11.520 ;
+        RECT 46.000 15.000 50.000 15.600 ;
     END
   END shift
   PIN state
@@ -138,8 +158,8 @@ MACRO life_cell
     USE SIGNAL ;
     ANTENNADIFFAREA 0.445500 ;
     PORT
-      LAYER met3 ;
-        RECT 46.000 27.240 50.000 27.840 ;
+      LAYER met2 ;
+        RECT 15.270 0.000 15.550 4.000 ;
     END
   END state
   PIN u
@@ -169,39 +189,11 @@ MACRO life_cell
         RECT 44.250 36.000 44.530 40.000 ;
     END
   END ur
-  PIN vccd1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met3 ;
-        RECT 0.000 27.240 4.000 27.840 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 14.720 10.640 16.320 27.440 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 39.720 10.640 41.320 27.440 ;
-    END
-  END vccd1
-  PIN vssd1
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 15.270 0.000 15.550 4.000 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 27.220 10.640 28.820 27.440 ;
-    END
-  END vssd1
   OBS
       LAYER li1 ;
         RECT 5.520 10.795 44.160 27.285 ;
       LAYER met1 ;
-        RECT 4.670 10.240 44.550 27.440 ;
+        RECT 4.670 10.640 44.550 27.440 ;
       LAYER met2 ;
         RECT 4.690 35.720 5.330 36.450 ;
         RECT 6.170 35.720 14.990 36.450 ;
@@ -209,21 +201,19 @@ MACRO life_cell
         RECT 25.490 35.720 34.310 36.450 ;
         RECT 35.150 35.720 43.970 36.450 ;
         RECT 4.690 4.280 44.520 35.720 ;
-        RECT 4.690 2.875 5.330 4.280 ;
-        RECT 6.170 2.875 14.990 4.280 ;
-        RECT 15.830 2.875 24.650 4.280 ;
-        RECT 25.490 2.875 34.310 4.280 ;
-        RECT 35.150 2.875 43.970 4.280 ;
+        RECT 4.690 4.000 5.330 4.280 ;
+        RECT 6.170 4.000 14.990 4.280 ;
+        RECT 15.830 4.000 24.650 4.280 ;
+        RECT 25.490 4.000 34.310 4.280 ;
+        RECT 35.150 4.000 43.970 4.280 ;
       LAYER met3 ;
-        RECT 4.400 35.000 45.600 35.865 ;
-        RECT 4.000 28.240 46.000 35.000 ;
-        RECT 4.400 26.840 45.600 28.240 ;
-        RECT 4.000 20.080 46.000 26.840 ;
-        RECT 4.400 18.680 45.600 20.080 ;
-        RECT 4.000 11.920 46.000 18.680 ;
-        RECT 4.400 10.520 45.600 11.920 ;
-        RECT 4.000 3.760 46.000 10.520 ;
-        RECT 4.400 2.895 45.600 3.760 ;
+        RECT 4.400 33.640 45.600 34.505 ;
+        RECT 4.000 25.520 46.000 33.640 ;
+        RECT 4.400 24.120 45.600 25.520 ;
+        RECT 4.000 16.000 46.000 24.120 ;
+        RECT 4.400 14.600 45.600 16.000 ;
+        RECT 4.000 6.480 46.000 14.600 ;
+        RECT 4.400 5.615 45.600 6.480 ;
   END
 END life_cell
 END LIBRARY

@@ -16,11 +16,7 @@ module life_cell(
     input   shift,
     output  out_data,
     // For neighbour connections
-    output state,
-
-    // Power pins
-    inout vccd1,
-    inout vssd1
+    output state
 );
     reg state;                                      // Internal state
     reg out_data;
