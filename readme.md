@@ -35,15 +35,29 @@ Learn about different structures and techniques in game of life here : [convayli
 
 ## Architecture
 
+Each cell in GOL is a physical macro consisting of a state machine. 
+
+The inputs are written like an SRAM array, with a word line.
+
+To make the system scalable, the output each cell is read out like a shift register, vertically. The output registers in each cell are chained vertically to form a 16-bit shift register and the outputs are first loaded to the output register in each cell and shifted out. 
+
 #### Cell structure
+
+Each cell gets the states of the neighbouring cells and control signals like shift, load, run, etc as inputs.
 
 ![](docs/cell_arch.drawio.svg)
 
 ### Interconnections
 
+Input signals are connected as shown below. Each bit of the ```in_load``` signal is shared between cells in the same row and ```in_data``` is split vertically. Each column gets a common ```in_data``` bit, similar to a memory array.
+
 ![](docs/network_inp.drawio.svg)
 
+The states of neoghbouring cells are connected together as shown below. The boundary cells are tied to 0. The ```run``` signal is global
+
 ![](docs/network_state.drawio.svg)
+
+The outputs are connected like a shift register and shifted out. The ```out_load``` and ```out_shift``` signals are global
 
 ![](docs/network_out.drawio.svg)
 
